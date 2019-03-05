@@ -372,4 +372,36 @@ export default addDigits;
 
 
 
+/*
+solution.js
+Реализуйте и экспортируйте по умолчанию функцию, которая делает заглавной первую букву каждого слова в предложении.
 
+solution('hello, world!'); // Hello, World!
+Подсказки
+Вычисление длины строки: length(str).
+Перевод строки/буквы в верхний регистр: toUpperCase(str).
+*/
+
+
+import { length, toUpperCase } from './strings';
+
+// BEGIN (write your solution here)
+const wordUpperCase = (str) => {
+
+    let edStr = toUpperCase(str[0]);
+    
+    for (let i=1; i<length(str); i+=1) {
+        if (str[i-1] === ' ') {
+            edStr = edStr + " " + toUpperCase(str[i]);
+        } else {
+            edStr = edStr + str[i];
+}
+ 
+}
+return edStr;
+}
+
+
+export default wordUpperCase;
+//wordUpperCase("hello, world");
+// END
