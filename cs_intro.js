@@ -421,3 +421,18 @@ export default (str) => {
   return result;
 };
 // END
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Задания с хекслета. Основы html и тд.</title>
+  	<meta charset="UTF-8">
+    <p>
+      <a href="mailto:alpr@grail.com">alpm@grail.com</a>,
+      <a href="https://github.com/alpr">github.com/alpr</a>
+    </p>
+  </head>
+  <body>
+  </body>
+</html>
